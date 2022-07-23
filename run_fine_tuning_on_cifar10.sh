@@ -1,0 +1,17 @@
+python3 fine_tuning_cifar10.py   \
+    --data_dir "/home/pc/utils/dataset" \
+    --encoder resnet50 \
+    --optimizer sgd \
+    --train_batch 64 \
+    --test_batch 100 \
+    --accumulate_grad_batches 4 \
+    --max_epochs 100 \
+    --lr 0.01 \
+    --momentum 0.9 \
+    --weight_decay 1e-4 \
+    --temperature 0.3 \
+    --output_dim 256 \
+    --eta_weight 0.1 \
+    --alpha 0.7 \
+    --manualSeed 42 \
+    --checkpoint_save_last

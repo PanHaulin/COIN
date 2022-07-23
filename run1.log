@@ -1,0 +1,140 @@
+Global seed set to 42
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name       | Type       | Params
+------------------------------------------
+0 | encoder    | ResNet     | 23.5 M
+1 | projector  | Contrastor | 4.7 M 
+2 | classifier | Linear     | 20.5 K
+------------------------------------------
+28.2 M    Trainable params
+0         Non-trainable params
+28.2 M    Total params
+112.998   Total estimated model params size (MB)
+==> Preparing dataset cifar10
+==> initializing logger TensorBoard
+==> initializing callbacks
+logger_dir:  trained_models/COIN/220710115930/
+use projector:  Contrastor
+==> creating model COIN
+==> using method class '<class 'methods.coin_with_scl.COIN'>'
+    Total params: 28.25M
+==> training and validating
+Files already downloaded and verified
+Files already downloaded and verified
+lr:0.01, momentum:0.9, wd:0.0001
+Training:
+Epoch 0: 100%|██████████| 882/882 [06:39<00:00,  2.21it/s, loss=0.317, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0842, train_total_loss=0.0842, train_acc1=0.312, val_total_loss=2.290, val_acc1=0.161]
+Epoch 1: 100%|██████████| 882/882 [08:22<00:00,  1.75it/s, loss=0.312, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.164, train_total_loss=0.164, train_acc1=0.0625, val_total_loss=2.290, val_acc1=0.153]
+Epoch 2: 100%|██████████| 882/882 [08:29<00:00,  1.73it/s, loss=0.302, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.214, train_total_loss=0.214, train_acc1=0.188, val_total_loss=2.290, val_acc1=0.172]
+Epoch 3: 100%|██████████| 882/882 [08:17<00:00,  1.77it/s, loss=0.298, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.177, train_total_loss=0.177, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.177]
+Epoch 4: 100%|██████████| 882/882 [08:07<00:00,  1.81it/s, loss=0.295, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0615, train_total_loss=0.0615, train_acc1=0.250, val_total_loss=2.290, val_acc1=0.175]
+Epoch 5: 100%|██████████| 882/882 [08:05<00:00,  1.82it/s, loss=0.292, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.228, train_total_loss=0.228, train_acc1=0.250, val_total_loss=2.290, val_acc1=0.182]
+Epoch 6: 100%|██████████| 882/882 [08:05<00:00,  1.82it/s, loss=0.29, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.222, train_total_loss=0.222, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.163]
+Epoch 7: 100%|██████████| 882/882 [08:06<00:00,  1.81it/s, loss=0.288, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.176, train_total_loss=0.176, train_acc1=0.188, val_total_loss=2.290, val_acc1=0.170]
+Epoch 8: 100%|██████████| 882/882 [08:06<00:00,  1.81it/s, loss=0.293, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.137, train_total_loss=0.137, train_acc1=0.250, val_total_loss=2.290, val_acc1=0.164]
+Epoch 9: 100%|██████████| 882/882 [08:00<00:00,  1.83it/s, loss=0.288, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.163, train_total_loss=0.163, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.189]
+Epoch 10: 100%|██████████| 882/882 [07:58<00:00,  1.85it/s, loss=0.287, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.165, train_total_loss=0.165, train_acc1=0.250, val_total_loss=2.290, val_acc1=0.180]
+Epoch 11: 100%|██████████| 882/882 [08:01<00:00,  1.83it/s, loss=0.286, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.049, train_total_loss=0.049, train_acc1=0.250, val_total_loss=2.290, val_acc1=0.162] 
+Epoch 12: 100%|██████████| 882/882 [07:58<00:00,  1.84it/s, loss=0.278, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0524, train_total_loss=0.0524, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.152]
+Epoch 13: 100%|██████████| 882/882 [08:10<00:00,  1.80it/s, loss=0.28, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.115, train_total_loss=0.115, train_acc1=0.188, val_total_loss=2.290, val_acc1=0.185]
+Epoch 14: 100%|██████████| 882/882 [08:10<00:00,  1.80it/s, loss=0.276, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.184, train_total_loss=0.184, train_acc1=0.188, val_total_loss=2.290, val_acc1=0.178]
+Epoch 15: 100%|██████████| 882/882 [08:10<00:00,  1.80it/s, loss=0.279, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.122, train_total_loss=0.122, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.182]
+Epoch 16: 100%|██████████| 882/882 [08:01<00:00,  1.83it/s, loss=0.277, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0649, train_total_loss=0.0649, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.191]
+Epoch 17: 100%|██████████| 882/882 [07:58<00:00,  1.84it/s, loss=0.278, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0973, train_total_loss=0.0973, train_acc1=0.0625, val_total_loss=2.290, val_acc1=0.202]
+Epoch 18: 100%|██████████| 882/882 [07:56<00:00,  1.85it/s, loss=0.281, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0908, train_total_loss=0.0908, train_acc1=0.250, val_total_loss=2.290, val_acc1=0.171]
+Epoch 19: 100%|██████████| 882/882 [08:05<00:00,  1.82it/s, loss=0.278, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.271, train_total_loss=0.271, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.198]
+Epoch 20: 100%|██████████| 882/882 [08:09<00:00,  1.80it/s, loss=0.275, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.0861, train_total_loss=0.0861, train_acc1=0.188, val_total_loss=2.290, val_acc1=0.186]
+Epoch 21: 100%|██████████| 882/882 [08:15<00:00,  1.78it/s, loss=0.278, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.0946, train_total_loss=0.0946, train_acc1=0.250, val_total_loss=2.290, val_acc1=0.184]
+Epoch 22: 100%|██████████| 882/882 [08:16<00:00,  1.77it/s, loss=0.275, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.160, train_total_loss=0.160, train_acc1=0.0625, val_total_loss=2.290, val_acc1=0.173]
+Epoch 23: 100%|██████████| 882/882 [08:23<00:00,  1.75it/s, loss=0.273, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0532, train_total_loss=0.0532, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.171]
+Epoch 24: 100%|██████████| 882/882 [08:19<00:00,  1.77it/s, loss=0.272, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.073, train_total_loss=0.073, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.173]
+Epoch 25: 100%|██████████| 882/882 [08:47<00:00,  1.67it/s, loss=0.275, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.158, train_total_loss=0.158, train_acc1=0.000, val_total_loss=2.290, val_acc1=0.172]
+Epoch 26: 100%|██████████| 882/882 [09:14<00:00,  1.59it/s, loss=0.273, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.103, train_total_loss=0.103, train_acc1=0.188, val_total_loss=2.290, val_acc1=0.156]
+Epoch 27: 100%|██████████| 882/882 [09:10<00:00,  1.60it/s, loss=0.27, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.170, train_total_loss=0.170, train_acc1=0.0625, val_total_loss=2.290, val_acc1=0.149]
+Epoch 28: 100%|██████████| 882/882 [09:16<00:00,  1.59it/s, loss=0.275, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.202, train_total_loss=0.202, train_acc1=0.0625, val_total_loss=2.290, val_acc1=0.156]
+Epoch 29: 100%|██████████| 882/882 [09:31<00:00,  1.54it/s, loss=0.271, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.215, train_total_loss=0.215, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.150]
+Epoch 30: 100%|██████████| 882/882 [09:25<00:00,  1.56it/s, loss=0.277, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.140, train_total_loss=0.140, train_acc1=0.312, val_total_loss=2.290, val_acc1=0.193]
+Epoch 31: 100%|██████████| 882/882 [09:26<00:00,  1.56it/s, loss=0.272, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.176, train_total_loss=0.176, train_acc1=0.312, val_total_loss=2.300, val_acc1=0.181]
+Epoch 32: 100%|██████████| 882/882 [09:26<00:00,  1.56it/s, loss=0.266, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.158, train_total_loss=0.158, train_acc1=0.375, val_total_loss=2.290, val_acc1=0.186]
+Epoch 33: 100%|██████████| 882/882 [09:22<00:00,  1.57it/s, loss=0.276, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.143, train_total_loss=0.143, train_acc1=0.0625, val_total_loss=2.290, val_acc1=0.143]
+Epoch 34: 100%|██████████| 882/882 [09:23<00:00,  1.56it/s, loss=0.272, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.117, train_total_loss=0.117, train_acc1=0.375, val_total_loss=2.290, val_acc1=0.182]
+Epoch 35: 100%|██████████| 882/882 [09:19<00:00,  1.58it/s, loss=0.269, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.0702, train_total_loss=0.0702, train_acc1=0.188, val_total_loss=2.290, val_acc1=0.194]
+Epoch 36: 100%|██████████| 882/882 [09:14<00:00,  1.59it/s, loss=0.274, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.258, train_total_loss=0.258, train_acc1=0.188, val_total_loss=2.290, val_acc1=0.180]
+Epoch 37: 100%|██████████| 882/882 [09:16<00:00,  1.59it/s, loss=0.264, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.045, train_total_loss=0.045, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.200]
+Epoch 38: 100%|██████████| 882/882 [09:13<00:00,  1.59it/s, loss=0.269, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.0967, train_total_loss=0.0967, train_acc1=0.0625, val_total_loss=2.290, val_acc1=0.182]
+Epoch 39: 100%|██████████| 882/882 [09:13<00:00,  1.59it/s, loss=0.261, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0582, train_total_loss=0.0582, train_acc1=0.0625, val_total_loss=2.290, val_acc1=0.190]
+Epoch 40: 100%|██████████| 882/882 [09:17<00:00,  1.58it/s, loss=0.266, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.118, train_total_loss=0.118, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.199]
+Epoch 41: 100%|██████████| 882/882 [09:12<00:00,  1.60it/s, loss=0.27, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.0993, train_total_loss=0.0993, train_acc1=0.188, val_total_loss=2.300, val_acc1=0.193]
+Epoch 42: 100%|██████████| 882/882 [09:17<00:00,  1.58it/s, loss=0.267, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.105, train_total_loss=0.105, train_acc1=0.188, val_total_loss=2.300, val_acc1=0.193]
+Epoch 43: 100%|██████████| 882/882 [09:22<00:00,  1.57it/s, loss=0.271, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.269, train_total_loss=0.269, train_acc1=0.312, val_total_loss=2.300, val_acc1=0.166]
+Epoch 44: 100%|██████████| 882/882 [09:23<00:00,  1.57it/s, loss=0.265, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.104, train_total_loss=0.104, train_acc1=0.500, val_total_loss=2.300, val_acc1=0.168]
+Epoch 45: 100%|██████████| 882/882 [09:08<00:00,  1.61it/s, loss=0.265, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0411, train_total_loss=0.0411, train_acc1=0.250, val_total_loss=2.300, val_acc1=0.172]
+Epoch 46: 100%|██████████| 882/882 [09:12<00:00,  1.60it/s, loss=0.265, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.153, train_total_loss=0.153, train_acc1=0.0625, val_total_loss=2.290, val_acc1=0.182]
+Epoch 47: 100%|██████████| 882/882 [08:21<00:00,  1.76it/s, loss=0.263, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0656, train_total_loss=0.0656, train_acc1=0.125, val_total_loss=2.290, val_acc1=0.187]
+Epoch 48: 100%|██████████| 882/882 [08:08<00:00,  1.81it/s, loss=0.263, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0495, train_total_loss=0.0495, train_acc1=0.125, val_total_loss=2.300, val_acc1=0.162]
+Epoch 49: 100%|██████████| 882/882 [08:17<00:00,  1.77it/s, loss=0.267, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.109, train_total_loss=0.109, train_acc1=0.125, val_total_loss=2.300, val_acc1=0.182]
+Epoch 50: 100%|██████████| 882/882 [08:10<00:00,  1.80it/s, loss=0.265, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.133, train_total_loss=0.133, train_acc1=0.000, val_total_loss=2.300, val_acc1=0.191]
+Epoch 51: 100%|██████████| 882/882 [08:06<00:00,  1.81it/s, loss=0.257, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.107, train_total_loss=0.107, train_acc1=0.250, val_total_loss=2.300, val_acc1=0.170]
+Epoch 52: 100%|██████████| 882/882 [08:03<00:00,  1.82it/s, loss=0.262, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0608, train_total_loss=0.0608, train_acc1=0.188, val_total_loss=2.300, val_acc1=0.176]
+Epoch 53: 100%|██████████| 882/882 [08:07<00:00,  1.81it/s, loss=0.265, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.120, train_total_loss=0.120, train_acc1=0.250, val_total_loss=2.300, val_acc1=0.181]
+Epoch 54: 100%|██████████| 882/882 [08:03<00:00,  1.82it/s, loss=0.265, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.054, train_total_loss=0.054, train_acc1=0.250, val_total_loss=2.300, val_acc1=0.171]
+Epoch 55: 100%|██████████| 882/882 [08:02<00:00,  1.83it/s, loss=0.263, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.0902, train_total_loss=0.0902, train_acc1=0.125, val_total_loss=2.300, val_acc1=0.170]
+Epoch 56: 100%|██████████| 882/882 [08:06<00:00,  1.81it/s, loss=0.263, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.129, train_total_loss=0.129, train_acc1=0.250, val_total_loss=2.300, val_acc1=0.161]
+Epoch 57: 100%|██████████| 882/882 [08:17<00:00,  1.77it/s, loss=0.263, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0372, train_total_loss=0.0372, train_acc1=0.250, val_total_loss=2.300, val_acc1=0.160]
+Epoch 58: 100%|██████████| 882/882 [08:15<00:00,  1.78it/s, loss=0.259, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0343, train_total_loss=0.0343, train_acc1=0.312, val_total_loss=2.300, val_acc1=0.174]
+Epoch 59: 100%|██████████| 882/882 [08:19<00:00,  1.77it/s, loss=0.262, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0697, train_total_loss=0.0697, train_acc1=0.0625, val_total_loss=2.300, val_acc1=0.158]
+Epoch 60: 100%|██████████| 882/882 [08:17<00:00,  1.77it/s, loss=0.263, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.194, train_total_loss=0.194, train_acc1=0.0625, val_total_loss=2.300, val_acc1=0.166]
+Epoch 61: 100%|██████████| 882/882 [08:16<00:00,  1.78it/s, loss=0.26, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.138, train_total_loss=0.138, train_acc1=0.125, val_total_loss=2.300, val_acc1=0.167]
+Epoch 62: 100%|██████████| 882/882 [08:24<00:00,  1.75it/s, loss=0.261, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0792, train_total_loss=0.0792, train_acc1=0.188, val_total_loss=2.300, val_acc1=0.150]
+Epoch 63: 100%|██████████| 882/882 [08:25<00:00,  1.75it/s, loss=0.256, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0582, train_total_loss=0.0582, train_acc1=0.125, val_total_loss=2.300, val_acc1=0.164]
+Epoch 64: 100%|██████████| 882/882 [08:24<00:00,  1.75it/s, loss=0.258, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.152, train_total_loss=0.152, train_acc1=0.312, val_total_loss=2.300, val_acc1=0.177]
+Epoch 65: 100%|██████████| 882/882 [08:19<00:00,  1.76it/s, loss=0.258, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.113, train_total_loss=0.113, train_acc1=0.125, val_total_loss=2.300, val_acc1=0.161] 
+Epoch 66: 100%|██████████| 882/882 [08:07<00:00,  1.81it/s, loss=0.267, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.118, train_total_loss=0.118, train_acc1=0.188, val_total_loss=2.300, val_acc1=0.159]
+Epoch 67: 100%|██████████| 882/882 [08:06<00:00,  1.81it/s, loss=0.26, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.0856, train_total_loss=0.0856, train_acc1=0.125, val_total_loss=2.300, val_acc1=0.179]
+Epoch 68: 100%|██████████| 882/882 [08:03<00:00,  1.83it/s, loss=0.26, v_num=19, train_classification_loss=2.300, train_contrastive_loss=0.081, train_total_loss=0.081, train_acc1=0.188, val_total_loss=2.300, val_acc1=0.173] 
+Epoch 69: 100%|██████████| 882/882 [07:55<00:00,  1.86it/s, loss=0.259, v_num=19, train_classification_loss=2.290, train_contrastive_loss=0.170, train_total_loss=0.170, train_acc1=0.125, val_total_loss=2.300, val_acc1=0.166]
+Epoch 70: 100%|██████████| 882/882 [07:53<00:00,  1.86it/s, loss=0.919, v_num=19, train_classification_loss=1.340, train_contrastive_loss=0.332, train_total_loss=1.370, train_acc1=0.688, val_total_loss=0.615, val_acc1=0.964]
+Epoch 71: 100%|██████████| 882/882 [07:55<00:00,  1.86it/s, loss=0.466, v_num=19, train_classification_loss=0.709, train_contrastive_loss=0.196, train_total_loss=0.728, train_acc1=0.750, val_total_loss=0.239, val_acc1=0.968]
+Epoch 72: 100%|██████████| 882/882 [07:53<00:00,  1.86it/s, loss=0.392, v_num=19, train_classification_loss=0.646, train_contrastive_loss=0.188, train_total_loss=0.665, train_acc1=0.812, val_total_loss=0.178, val_acc1=0.969]
+Epoch 73: 100%|██████████| 882/882 [07:58<00:00,  1.84it/s, loss=0.353, v_num=19, train_classification_loss=0.863, train_contrastive_loss=0.198, train_total_loss=0.883, train_acc1=0.812, val_total_loss=0.159, val_acc1=0.971]
+Epoch 74: 100%|██████████| 882/882 [07:55<00:00,  1.85it/s, loss=0.289, v_num=19, train_classification_loss=0.166, train_contrastive_loss=0.0467, train_total_loss=0.171, train_acc1=1.000, val_total_loss=0.154, val_acc1=0.969]
+Epoch 75: 100%|██████████| 882/882 [07:54<00:00,  1.86it/s, loss=0.318, v_num=19, train_classification_loss=0.211, train_contrastive_loss=0.060, train_total_loss=0.217, train_acc1=0.938, val_total_loss=0.144, val_acc1=0.970]
+Epoch 76: 100%|██████████| 882/882 [05:01<00:00,  2.93it/s, loss=0.294, v_num=19, train_classification_loss=0.547, train_contrastive_loss=0.191, train_total_loss=0.566, train_acc1=0.812, val_total_loss=0.136, val_acc1=0.970]
+Epoch 77: 100%|██████████| 882/882 [05:04<00:00,  2.90it/s, loss=0.283, v_num=19, train_classification_loss=0.369, train_contrastive_loss=0.221, train_total_loss=0.392, train_acc1=0.938, val_total_loss=0.140, val_acc1=0.969]
+Epoch 78: 100%|██████████| 882/882 [05:03<00:00,  2.90it/s, loss=0.268, v_num=19, train_classification_loss=0.404, train_contrastive_loss=0.100, train_total_loss=0.414, train_acc1=0.875, val_total_loss=0.138, val_acc1=0.970]
+Epoch 79: 100%|██████████| 882/882 [05:00<00:00,  2.93it/s, loss=0.256, v_num=19, train_classification_loss=0.261, train_contrastive_loss=0.108, train_total_loss=0.272, train_acc1=0.938, val_total_loss=0.127, val_acc1=0.973]
+Epoch 80: 100%|██████████| 882/882 [04:43<00:00,  3.11it/s, loss=0.261, v_num=19, train_classification_loss=0.476, train_contrastive_loss=0.148, train_total_loss=0.491, train_acc1=0.875, val_total_loss=0.126, val_acc1=0.974]
+Epoch 81: 100%|██████████| 882/882 [04:46<00:00,  3.08it/s, loss=0.251, v_num=19, train_classification_loss=0.289, train_contrastive_loss=0.140, train_total_loss=0.303, train_acc1=0.938, val_total_loss=0.128, val_acc1=0.971]
+Epoch 82: 100%|██████████| 882/882 [05:23<00:00,  2.73it/s, loss=0.23, v_num=19, train_classification_loss=0.135, train_contrastive_loss=0.118, train_total_loss=0.147, train_acc1=1.000, val_total_loss=0.120, val_acc1=0.974]
+Epoch 83: 100%|██████████| 882/882 [06:25<00:00,  2.29it/s, loss=0.217, v_num=19, train_classification_loss=0.143, train_contrastive_loss=0.0806, train_total_loss=0.152, train_acc1=0.938, val_total_loss=0.124, val_acc1=0.972]
+Epoch 84: 100%|██████████| 882/882 [06:35<00:00,  2.23it/s, loss=0.211, v_num=19, train_classification_loss=0.263, train_contrastive_loss=0.101, train_total_loss=0.273, train_acc1=0.938, val_total_loss=0.118, val_acc1=0.973]
+Epoch 85: 100%|██████████| 882/882 [06:30<00:00,  2.26it/s, loss=0.212, v_num=19, train_classification_loss=0.328, train_contrastive_loss=0.0702, train_total_loss=0.336, train_acc1=0.875, val_total_loss=0.117, val_acc1=0.975] 
+Epoch 86: 100%|██████████| 882/882 [06:25<00:00,  2.29it/s, loss=0.22, v_num=19, train_classification_loss=0.437, train_contrastive_loss=0.193, train_total_loss=0.456, train_acc1=0.938, val_total_loss=0.113, val_acc1=0.976]
+Epoch 87: 100%|██████████| 882/882 [04:52<00:00,  3.01it/s, loss=0.237, v_num=19, train_classification_loss=0.500, train_contrastive_loss=0.131, train_total_loss=0.513, train_acc1=0.875, val_total_loss=0.112, val_acc1=0.976]
+Epoch 88: 100%|██████████| 882/882 [04:56<00:00,  2.98it/s, loss=0.205, v_num=19, train_classification_loss=0.185, train_contrastive_loss=0.108, train_total_loss=0.196, train_acc1=0.875, val_total_loss=0.111, val_acc1=0.977]
+Epoch 89: 100%|██████████| 882/882 [04:59<00:00,  2.95it/s, loss=0.209, v_num=19, train_classification_loss=0.777, train_contrastive_loss=0.176, train_total_loss=0.795, train_acc1=0.688, val_total_loss=0.111, val_acc1=0.976]
+Epoch 90: 100%|██████████| 882/882 [05:06<00:00,  2.88it/s, loss=0.196, v_num=19, train_classification_loss=0.0902, train_contrastive_loss=0.0765, train_total_loss=0.0978, train_acc1=1.000, val_total_loss=0.113, val_acc1=0.976]
+Epoch 91: 100%|██████████| 882/882 [05:06<00:00,  2.88it/s, loss=0.186, v_num=19, train_classification_loss=0.217, train_contrastive_loss=0.101, train_total_loss=0.228, train_acc1=0.938, val_total_loss=0.112, val_acc1=0.977]
+Epoch 92: 100%|██████████| 882/882 [05:01<00:00,  2.93it/s, loss=0.181, v_num=19, train_classification_loss=0.268, train_contrastive_loss=0.102, train_total_loss=0.278, train_acc1=0.875, val_total_loss=0.107, val_acc1=0.979]
+Epoch 93: 100%|██████████| 882/882 [05:05<00:00,  2.89it/s, loss=0.183, v_num=19, train_classification_loss=0.247, train_contrastive_loss=0.130, train_total_loss=0.260, train_acc1=0.938, val_total_loss=0.109, val_acc1=0.979]  
+Epoch 94: 100%|██████████| 882/882 [05:05<00:00,  2.89it/s, loss=0.191, v_num=19, train_classification_loss=0.0627, train_contrastive_loss=0.101, train_total_loss=0.0728, train_acc1=1.000, val_total_loss=0.109, val_acc1=0.978]
+Epoch 95: 100%|██████████| 882/882 [05:00<00:00,  2.94it/s, loss=0.179, v_num=19, train_classification_loss=0.215, train_contrastive_loss=0.103, train_total_loss=0.225, train_acc1=0.938, val_total_loss=0.108, val_acc1=0.978]  
+Epoch 96: 100%|██████████| 882/882 [05:02<00:00,  2.92it/s, loss=0.198, v_num=19, train_classification_loss=0.345, train_contrastive_loss=0.130, train_total_loss=0.358, train_acc1=0.938, val_total_loss=0.106, val_acc1=0.979]
+Epoch 97: 100%|██████████| 882/882 [05:06<00:00,  2.88it/s, loss=0.181, v_num=19, train_classification_loss=0.266, train_contrastive_loss=0.155, train_total_loss=0.282, train_acc1=0.938, val_total_loss=0.109, val_acc1=0.979] 
+Epoch 98: 100%|██████████| 882/882 [05:12<00:00,  2.83it/s, loss=0.196, v_num=19, train_classification_loss=0.433, train_contrastive_loss=0.139, train_total_loss=0.447, train_acc1=0.875, val_total_loss=0.107, val_acc1=0.977]
+Epoch 99: 100%|██████████| 882/882 [05:18<00:00,  2.77it/s, loss=0.184, v_num=19, train_classification_loss=0.108, train_contrastive_loss=0.0493, train_total_loss=0.113, train_acc1=0.938, val_total_loss=0.107, val_acc1=0.978]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+==> loading and testing best model
+==> loading best_path:  /home/Panhl/projects/COIN/trained_models/COIN/220710115930/epoch=92,val_acc1=0.9788,val_total_loss=0.1069.ckpt
+use projector:  Contrastor
+Testing: 100%|██████████| 100/100 [00:31<00:00,  3.13it/s]
+--------------------------------------------------------------------------------
+DATALOADER:0 TEST RESULTS
+{'test_acc1': 0.9787999987602234,
+ 'test_acc5': 1.0,
+ 'test_classification_loss': 0.07815754413604736,
+ 'test_contrastive_loss': 0.2872959077358246,
+ 'test_sdbw_score': 0.27234968591685627,
+ 'test_total_loss': 0.10688713192939758}
+--------------------------------------------------------------------------------
