@@ -1,6 +1,8 @@
 # Contrastive Initialization (COIN)
 The key code of our work "Improving Fine-tuning of Self-supervised Models with Contrastive Initialization".
 
+![framework](imgs/COIN%20framework.jpeg)
+
 ## 1. Requirements
 The important packages are as follows:
 ```python
@@ -42,7 +44,6 @@ Or directly pass by args in `run_fine_tuning_on_cifar10.sh`, like this:
 ## 3. Dataset
 CIFAR-10 can be automatically downloaded by torchvision.
 Details of other datasets can be found in our paper.
-
 
 ## 4. Reproducing the Experiment on CIFAR-10
 We provide the implementation on CIFAR-10 and the bash file `run_fine_tuning_on_cifar10.sh`. You can easily run the code just like this:
